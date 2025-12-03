@@ -3754,28 +3754,29 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CM5_HighSpeedBreakout:SW_Push"
+		(symbol "power:+3V3"
+			(power)
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(hide yes)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3783,24 +3784,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3809,7 +3792,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3818,10 +3801,29 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -3832,19 +3834,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -3855,7 +3846,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3865,10 +3856,12 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3876,24 +3869,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4131,16 +4106,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Home btn"
-		(exclude_from_sim no)
-		(at 128.778 175.006 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9f5cf5d8-ab5a-43f2-b9e5-dc4410a8f7f2")
-	)
 	(junction
 		(at 102.87 134.62)
 		(diameter 0)
@@ -4152,6 +4117,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "267545ee-c576-4ad5-8d2b-b916d4f0eb3e")
+	)
+	(junction
+		(at 36.83 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e960f92-baf0-4431-911c-f817aab86492")
 	)
 	(junction
 		(at 102.87 137.16)
@@ -4301,6 +4272,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 144.78) (xy 36.83 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "430d5bf0-806f-4d5a-a7ce-7ff26f581799")
+	)
+	(wire
+		(pts
 			(xy 102.87 139.7) (xy 102.87 142.24)
 		)
 		(stroke
@@ -4368,6 +4349,16 @@
 			(type default)
 		)
 		(uuid "7e4b3b4a-6c52-444c-ab6d-7134e0c6170a")
+	)
+	(wire
+		(pts
+			(xy 41.91 144.78) (xy 36.83 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d4f348-7209-4499-96e8-e81c1658681e")
 	)
 	(wire
 		(pts
@@ -4458,6 +4449,16 @@
 			(type default)
 		)
 		(uuid "aaaee7aa-f07d-41a3-82b1-20386721e8b5")
+	)
+	(wire
+		(pts
+			(xy 36.83 142.24) (xy 41.91 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f71683-24a4-43a3-b15e-ae6ad7ab2981")
 	)
 	(wire
 		(pts
@@ -6898,6 +6899,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 36.83 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3d53352-d5af-4c70-a1bf-2151cc983918")
+		(property "Reference" "#PWR026"
+			(at 36.83 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 36.83 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8ef5241-d2ae-4986-8ce1-8230045e5f7f")
+		)
+		(instances
+			(project ""
+				(path "/e2b47f54-afd4-414f-8c8f-251eedeb980e/54ad1413-ad8b-422f-86f7-54b541faf2f8"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 113.03 91.44 0)
 		(unit 1)
@@ -6958,74 +7025,6 @@
 			(project "sb_handheld"
 				(path "/e2b47f54-afd4-414f-8c8f-251eedeb980e/54ad1413-ad8b-422f-86f7-54b541faf2f8"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CM5_HighSpeedBreakout:SW_Push")
-		(at 143.51 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d89f3649-2a30-4b3d-ab80-5c75dc67a808")
-		(property "Reference" "SW5"
-			(at 143.51 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 143.51 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 143.51 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 143.51 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b418a14-831f-4a0a-afeb-13eba8cc2fe9")
-		)
-		(pin "2"
-			(uuid "860de70b-fc79-49fe-8c62-88402347018e")
-		)
-		(instances
-			(project "sb_handheld"
-				(path "/e2b47f54-afd4-414f-8c8f-251eedeb980e/54ad1413-ad8b-422f-86f7-54b541faf2f8"
-					(reference "SW5")
 					(unit 1)
 				)
 			)
