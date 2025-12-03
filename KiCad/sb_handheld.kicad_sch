@@ -848,8 +848,8 @@
 		(uuid a59c1a94-0295-4ec7-a409-20586399c203)
 	)
 	(rectangle
-		(start 172.72 26.924)
-		(end 180.34 37.084)
+		(start 172.72 28.194)
+		(end 180.34 38.354)
 		(stroke
 			(width 0)
 			(type default)
@@ -921,7 +921,7 @@
 	)
 	(text "Display\n10.1\", 1280x800\nCap Touch"
 		(exclude_from_sim no)
-		(at 56.388 32.512 0)
+		(at 58.674 58.928 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -980,7 +980,7 @@
 		)
 		(uuid "2ddac7bf-3f52-456a-841a-1f9b47f07669")
 	)
-	(text "Inputs:\nPower switch\nDual joysticks\nD-pad btns\nABXY btns\nDual triggers\nDual bumpers\nHome menu\nUSB for external controller\n\nOutputs:\nMain display 10.1\"\nAudio, via Bluetooth ideally\n\nPower:\n5V @ 1A??\nRechargable\n\nMisc:\nSerial port"
+	(text "Inputs:\nPower switch\nDual joysticks\nD-pad btns\nABXY btns\nDual triggers\nDual bumpers\nHome menu\n\nOutputs:\nMain display 10.1\"\nAudio, via Bluetooth ideally\n\nPower:\n5V @ 1A??\nRechargable\n\nMisc:\nSerial port\nProgramming port"
 		(exclude_from_sim yes)
 		(at 236.22 59.69 0)
 		(effects
@@ -1003,7 +1003,7 @@
 	)
 	(text "RT"
 		(exclude_from_sim no)
-		(at 176.53 35.56 0)
+		(at 176.53 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1032,7 +1032,7 @@
 		)
 		(uuid "8ca13e55-4a25-4ae5-b36d-71597daaf55b")
 	)
-	(text "Input PWR"
+	(text "Input PWR +5V"
 		(exclude_from_sim no)
 		(at 221.742 118.11 0)
 		(effects
@@ -1317,7 +1317,7 @@
 	)
 	(sheet
 		(at 20.32 39.37)
-		(size 24.13 54.61)
+		(size 31.75 54.61)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1347,6 +1347,146 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "3V3" input
+			(at 52.07 87.63 0)
+			(uuid "8f1948fe-21bd-49dc-93e9-29110f7a8962")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_Trig" output
+			(at 52.07 41.91 0)
+			(uuid "cb84de79-ef24-4a28-ab95-0eaba4814881")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 52.07 91.44 0)
+			(uuid "a976f87c-f369-4756-8c81-25803931632e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_Bump" output
+			(at 52.07 44.45 0)
+			(uuid "ed8a6c44-0d0e-41bb-9186-592692dd81e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_U" output
+			(at 52.07 72.39 0)
+			(uuid "061a71aa-f488-4f1d-9674-456209e17a46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_L" output
+			(at 52.07 74.93 0)
+			(uuid "c63b51e2-f40f-4a08-9907-0f096838a95f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_R" output
+			(at 52.07 77.47 0)
+			(uuid "d545128c-6afb-416c-8ebe-8d1632fd3629")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_D" output
+			(at 52.07 80.01 0)
+			(uuid "37c41eb0-f9eb-4b24-9360-bdfa368fe675")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSB3" output
+			(at 52.07 63.5 0)
+			(uuid "f088e905-03e7-4130-8c55-8fb9ac39f173")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSB4" output
+			(at 52.07 66.04 0)
+			(uuid "efb247e1-7447-435c-b890-97f9f9605e1d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSB1" output
+			(at 52.07 58.42 0)
+			(uuid "eaa937b9-4c78-47c2-bbdf-06667b1b20d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSP0" output
+			(at 52.07 52.07 0)
+			(uuid "dfd3f3bc-a934-40e8-ba7b-aef8d75546dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSP1" output
+			(at 52.07 54.61 0)
+			(uuid "1c8d2c07-e6da-421b-9d60-1dc5a4202860")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CL_JSB2" output
+			(at 52.07 60.96 0)
+			(uuid "b932b5f8-6028-4a00-af06-57a54fde15a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1400,8 +1540,8 @@
 		)
 	)
 	(sheet
-		(at 160.02 38.1)
-		(size 25.4 54.61)
+		(at 151.13 38.1)
+		(size 34.29 54.61)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1416,7 +1556,7 @@
 		)
 		(uuid "6239e351-1e9b-4e1a-998c-979da75b2bd8")
 		(property "Sheetname" "CntrlRight"
-			(at 160.02 37.3884 0)
+			(at 151.13 37.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1425,7 +1565,7 @@
 			)
 		)
 		(property "Sheetfile" "UserIn.kicad_sch"
-			(at 160.02 93.2946 0)
+			(at 151.13 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1434,7 +1574,7 @@
 			)
 		)
 		(pin "CR_B" output
-			(at 160.02 60.96 180)
+			(at 151.13 57.15 180)
 			(uuid "fc7be567-1460-4e25-bab1-c53d28f9ca48")
 			(effects
 				(font
@@ -1444,7 +1584,7 @@
 			)
 		)
 		(pin "CR_Home" output
-			(at 160.02 67.31 180)
+			(at 151.13 48.26 180)
 			(uuid "4f829ca1-c22a-4f81-8d39-617e7ed00ffb")
 			(effects
 				(font
@@ -1454,7 +1594,7 @@
 			)
 		)
 		(pin "CR_X" output
-			(at 160.02 50.8 180)
+			(at 151.13 54.61 180)
 			(uuid "b77f90ac-8550-4864-8e26-628a1b06b623")
 			(effects
 				(font
@@ -1464,7 +1604,7 @@
 			)
 		)
 		(pin "CR_Bump" output
-			(at 160.02 44.45 180)
+			(at 151.13 44.45 180)
 			(uuid "3899f7d2-a5a3-4465-876d-545263c07873")
 			(effects
 				(font
@@ -1474,7 +1614,7 @@
 			)
 		)
 		(pin "CR_Trig" output
-			(at 160.02 41.91 180)
+			(at 151.13 41.91 180)
 			(uuid "b8345f0c-73f0-4438-b14d-9dc9bd9ca49a")
 			(effects
 				(font
@@ -1484,7 +1624,7 @@
 			)
 		)
 		(pin "CR_Y" output
-			(at 160.02 48.26 180)
+			(at 151.13 52.07 180)
 			(uuid "9f2b9f58-0822-4dc8-a3d1-4ebc123f2770")
 			(effects
 				(font
@@ -1494,7 +1634,7 @@
 			)
 		)
 		(pin "CR_A" output
-			(at 160.02 63.5 180)
+			(at 151.13 59.69 180)
 			(uuid "fde64010-916d-4272-bc5d-237b27eb9b31")
 			(effects
 				(font
@@ -1504,7 +1644,7 @@
 			)
 		)
 		(pin "3V3" input
-			(at 160.02 86.36 180)
+			(at 151.13 86.36 180)
 			(uuid "fbf2ba9d-f97b-4879-9f4c-55c749a90096")
 			(effects
 				(font
@@ -1514,8 +1654,68 @@
 			)
 		)
 		(pin "GND" input
-			(at 160.02 90.17 180)
+			(at 151.13 90.17 180)
 			(uuid "3085a4bc-2619-41d9-b68c-9270f43443ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSB3" output
+			(at 151.13 77.47 180)
+			(uuid "3fbd6d11-334a-4747-852c-b6a59fa3dd90")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSB2" output
+			(at 151.13 74.93 180)
+			(uuid "6c7adde0-8706-4f16-a528-85aaf5806fa8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSB4" output
+			(at 151.13 80.01 180)
+			(uuid "81ef1bdc-c66d-4ef4-8e90-f2ac88b19150")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSB1" output
+			(at 151.13 72.39 180)
+			(uuid "2e785f2d-f062-4efe-8153-c4ad3d7de76a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSP0" output
+			(at 151.13 66.04 180)
+			(uuid "366fb2c8-6af8-4135-a482-69cf9e760759")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CR_JSP1" output
+			(at 151.13 68.58 180)
+			(uuid "b61011f6-22cc-42a3-bed0-c56130f041be")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,78 +1727,6 @@
 			(project "sb_handheld"
 				(path "/e2b47f54-afd4-414f-8c8f-251eedeb980e"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 327.66 88.9)
-		(size 12.7 10.16)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "77aafe8f-860d-4135-993b-3f03c481f100")
-		(property "Sheetname" "CntrBtn"
-			(at 327.66 88.1884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "CntrBtn.kicad_sch"
-			(at 327.66 99.6446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "Vcc" input
-			(at 340.36 90.17 0)
-			(uuid "edd2946a-03a1-490d-b766-09824a0f735c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "btn_in" input
-			(at 327.66 93.98 180)
-			(uuid "532c7afb-4217-414c-97b8-aa3bc9d205e3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "signal_out" input
-			(at 340.36 96.52 0)
-			(uuid "8a12d594-c7af-4df2-a314-76640e3996c4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "sb_handheld"
-				(path "/e2b47f54-afd4-414f-8c8f-251eedeb980e"
-					(page "7")
 				)
 			)
 		)

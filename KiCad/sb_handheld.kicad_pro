@@ -636,62 +636,6 @@
     [
       "35c94761-efac-418a-91db-c9b83c0b3899",
       "CntrlLeft"
-    ],
-    [
-      "77aafe8f-860d-4135-993b-3f03c481f100",
-      "CntrBtn"
-    ],
-    [
-      "b65d468b-0271-475b-bfa0-5edddf91c73b",
-      "CntrBtn"
-    ],
-    [
-      "2192cc8f-655d-4541-b277-b7a0a5260346",
-      "CntrBtn1"
-    ],
-    [
-      "b6250329-bdc4-45c1-a6bb-2e0cadeb9f26",
-      "CntrBtn2"
-    ],
-    [
-      "57806a10-d03e-45c2-905e-9ef24d9fc5a3",
-      "CntrBtn3"
-    ],
-    [
-      "d48abaaa-9c99-46dc-846f-bb3c471b4c2c",
-      "CntrBtn4"
-    ],
-    [
-      "8ca35cf0-ef30-4af4-8c04-dbe73795e853",
-      "CntrBtn5"
-    ],
-    [
-      "d2f4d4b1-81b0-4a1b-a44d-4fb0a202ecbb",
-      "CntrBtn6"
-    ],
-    [
-      "c2efde51-2b31-411a-a1f8-03ea516bbbe6",
-      "CntrBtn"
-    ],
-    [
-      "eec4c158-80cb-4e4a-a3b9-d6dadcc3c62d",
-      "CntrBtn1"
-    ],
-    [
-      "74b40991-5fb4-4703-9174-b44bb33dc1d3",
-      "CntrBtn3"
-    ],
-    [
-      "36ecb3e7-9b5a-4f05-bbc7-f5517ba4d599",
-      "CntrBtn4"
-    ],
-    [
-      "080458a5-8993-446e-83d9-bcde56d7c9a2",
-      "CntrBtn5"
-    ],
-    [
-      "f76cda86-381c-44b3-a7df-58f7c58efb05",
-      "CntrBtn6"
     ]
   ],
   "text_variables": {}

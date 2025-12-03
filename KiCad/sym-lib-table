@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SBC_handheld")(type "KiCad")(uri "E:/Projects/SBC-retro-handHeld/KiCad-Lib/symbols/SBC_handheld.kicad_sym")(options "")(descr ""))
+)
