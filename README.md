@@ -1,0 +1,1 @@
+# Kicad-Global-Libraries
